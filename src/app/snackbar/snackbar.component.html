@@ -1,0 +1,30 @@
+<div class="main_side_head">
+    <h1 class="side_heading">{{title}}</h1>
+</div>
+
+<div class="bg_clr" style="min-height: 300px;">
+    <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <input matInput value="Disco party!" #message>
+    </mat-form-field>
+      
+    <mat-form-field appearance="fill">
+        <mat-label>Action</mat-label>
+        <input matInput value="Dance" #action>
+    </mat-form-field>
+      
+    <button mat-stroked-button (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
+   
+</div>
+
+
+<div class="buttons_main">
+        <div class="button_cls button_cls1">
+            <button class="btn btn-primary" (click)="previousButton()">Previous</button>
+        </div>
+    
+        <div class="button_cls button_cls2">
+            <button class="btn btn-primary" (click)="nextButton()">Next</button>
+        </div>        
+</div>    
+

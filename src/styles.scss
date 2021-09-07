@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main_side_head .side_heading{
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+.router_cls .buttons_main{
+    padding-top: 100px;
+}
+.router_cls .button_cls{
+    display: inline-block;
+}
+.button_cls2{
+    float: right;
+}
+.bg_clr{
+    background-color: #756f7a;
+    padding: 15px;
+}

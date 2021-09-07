@@ -1,0 +1,27 @@
+<div class="main_side_head">
+    <h1 class="side_heading">{{title}}</h1>
+</div>
+
+<div class="bg_clr" style="min-height: 300px;">
+    <mat-slider
+    thumbLabel
+    [displayWith]="formatLabel"
+    tickInterval="1000"
+    step="1000"
+    min="0"
+    max="100000"
+    aria-label="units"></mat-slider>
+   
+</div>
+
+
+<div class="buttons_main">
+        <div class="button_cls button_cls1">
+            <button class="btn btn-primary" (click)="previousButton()">Previous</button>
+        </div>
+    
+        <div class="button_cls button_cls2">
+            <button class="btn btn-primary" (click)="nextButton()">Next</button>
+        </div>        
+</div>    
+

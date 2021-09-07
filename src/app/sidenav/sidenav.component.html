@@ -1,0 +1,34 @@
+<div class="main_side_head">
+    <h1 class="side_heading">{{title}}</h1>
+</div>
+
+<div class="bg_clr" style="min-height: 300px;">
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+          <p>Auto-resizing sidenav</p>
+          <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+          <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+          </button>
+        </mat-drawer>
+      
+        <div class="example-sidenav-content">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+          </button>
+        </div>
+      
+      </mat-drawer-container>
+</div>
+
+
+<div class="buttons_main">
+        <div class="button_cls button_cls1">
+            <button class="btn btn-primary" (click)="previousButton()">Previous</button>
+        </div>
+    
+        <div class="button_cls button_cls2">
+            <button class="btn btn-primary" (click)="nextButton()">Next</button>
+        </div>        
+</div>    
+

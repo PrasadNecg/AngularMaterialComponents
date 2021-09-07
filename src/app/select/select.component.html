@@ -1,0 +1,41 @@
+<div class="main_side_head">
+    <h1 class="side_heading">{{title}}</h1>
+</div>
+
+<div class="bg_clr" style="min-height: 300px;">
+    <form>
+        <h4>mat-select</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Favorite food</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p> Selected food: {{selectedValue}} </p>
+        <h4>native html select</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Favorite car</mat-label>
+          <select matNativeControl [(ngModel)]="selectedCar" name="car">
+            <option value="" selected></option>
+            <option *ngFor="let car of cars" [value]="car.value">
+              {{car.viewValue}}
+            </option>
+          </select>
+        </mat-form-field>
+        <p> Selected car: {{selectedCar}} </p>
+      </form> 
+</div>
+
+
+<div class="buttons_main">
+        <div class="button_cls button_cls1">
+            <button class="btn btn-primary" (click)="previousButton()">Previous</button>
+        </div>
+    
+        <div class="button_cls button_cls2">
+            <button class="btn btn-primary" (click)="nextButton()">Next</button>
+        </div>        
+</div>    
+
